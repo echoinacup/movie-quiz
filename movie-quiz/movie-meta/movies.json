@@ -56,7 +56,7 @@
   {
     "_id": 10,
     "title": "Matrix",
-    "hint": "One way or another, Neo, this war is going to end. Tonight, the future of both worlds will be in your hands… or in his.",
+    "hint": "One way or another, Neo, this war is going to end. \nTonight, the future of both worlds will be in your hands… or in his.",
     "image_source": "matrix.jpeg"
   },
   {
@@ -80,7 +80,7 @@
   {
     "_id": 14,
     "title": "Drive",
-    "hint": "There's a hundred-thousand streets in this city.\n You don't need to know the route. \nYou give me a time and a place, \nI give you a five minute window. \nAnything happens in that five minutes and I'm yours. \nNo matter what. Anything happens a minute either side of that and you're on your own.\n Do you understand?",
+    "hint": "There's a hundred-thousand streets in this city. You don't need to know the route. \nYou give me a time and a place, I give you a five minute window. \nAnything happens in that five minutes and I'm yours. No matter what. Anything happens a minute either side of that \nand you're on your own. Do you understand?",
     "image_source": "drive-movie.jpeg"
   },
   {
