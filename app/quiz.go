@@ -26,7 +26,6 @@ func initMainWindow(currentApp fyne.App) fyne.Window {
 }
 
 var currentMovieHint string
-var moviesCount int
 
 //go:embed images/layout/harp.jpeg
 //go:embed images/movies/*
@@ -45,8 +44,6 @@ func main() {
 		log.Fatal(err)
 	}
 	movies := UnmarshalMovies(moviesMeta)
-	moviesCount = len(movies)
-
 	// TODO to fix somehow or leave as is
 	mainScreeHarpBytes, err := resourcesFiles.ReadFile("images/layout/harp.jpeg")
 	var mainRes = &fyne.StaticResource{
@@ -59,9 +56,9 @@ func main() {
 	questionButtons := initQuestionButtons()
 	fistRow, secondRow := createQuestionsRows(questionButtons)
 	mainScreenImg := canvas.NewImageFromResource(mainRes)
-	nextBtn := addNextButton(movies, mainScreenImg, questionButtons)
-	startBtn := addStartButton(movies, mainScreenImg, questionButtons, fistRow, secondRow, nextBtn)
 	hintButton := createHintButton()
+	nextBtn := addNextButton(movies, mainScreenImg, questionButtons, hintButton)
+	startBtn := addStartButton(movies, mainScreenImg, questionButtons, fistRow, secondRow, nextBtn, hintButton)
 
 	// init UI containers
 	startBtnContainer := createStartButtonContainer(startBtn)
@@ -99,20 +96,20 @@ func createHintButton() *widget.Button {
 
 func addNextButton(movies []Movie,
 	mainScreenImg *canvas.Image,
-	questionButtons []*widget.Button) *widget.Button {
+	questionButtons []*widget.Button, hintBtn *widget.Button) *widget.Button {
 	nextBtn := widget.NewButton("Next movie", func() {})
 	nextBtn.Disable()
 	nextBtn.OnTapped = func() {
-		initRound(movies, mainScreenImg, questionButtons, nextBtn)
+		initRound(movies, mainScreenImg, questionButtons, nextBtn, hintBtn)
 	}
 	return nextBtn
 }
 
-func addStartButton(movies []Movie, mainScreenImg *canvas.Image, questionButtons []*widget.Button, firstRow *fyne.Container, secondRow *fyne.Container, nextBtn *widget.Button) *widget.Button {
+func addStartButton(movies []Movie, mainScreenImg *canvas.Image, questionButtons []*widget.Button, firstRow *fyne.Container, secondRow *fyne.Container, nextBtn *widget.Button, hintBtn *widget.Button) *widget.Button {
 	startBtn := widget.NewButton("Start!", func() {})
 	startBtn.OnTapped = func() {
 		startBtn.Hide()
-		initRound(movies, mainScreenImg, questionButtons, nextBtn)
+		initRound(movies, mainScreenImg, questionButtons, nextBtn, hintBtn)
 		// rows for questions are not visible from the beginning
 		firstRow.Show()
 		secondRow.Show()
@@ -124,8 +121,10 @@ func initRound(
 	movies []Movie,
 	mainScreenInitImg *canvas.Image,
 	questionButtons []*widget.Button,
-	nextButton *widget.Button) {
+	nextButton *widget.Button,
+	hintBtn *widget.Button) {
 	//TODO
+	updateButtonLabel(hintBtn, "Help me Master!")
 	nextButton.Disable()
 
 	currentRoundMovies := GenerateMovieOptions(movies)
