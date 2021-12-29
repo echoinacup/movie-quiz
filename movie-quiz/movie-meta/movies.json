@@ -75,13 +75,13 @@
     "_id": 13,
     "title": "Place beyond the pines",
     "hint": "If you ride like lightning, you're gonna crash like thunder",
-    "image_source": "Place-Beyond.jpeg"
+    "image_source": "place-beyond.jpeg"
   },
   {
     "_id": 14,
     "title": "Drive",
     "hint": "There's a hundred-thousand streets in this city.\n You don't need to know the route. \nYou give me a time and a place, \nI give you a five minute window. \nAnything happens in that five minutes and I'm yours. \nNo matter what. Anything happens a minute either side of that and you're on your own.\n Do you understand?",
-    "image_source": "drive-movie.jpeg"
+    "image_source": "drive.jpeg"
   },
   {
     "_id": 15,

@@ -1,10 +1,9 @@
-package main
+package utls
 
 import (
 	"io/ioutil"
 )
 
-// TODO implement best practise for files
 func FetchFileContent(path string) []byte {
 	fileData, err := ioutil.ReadFile(path)
 	check(err)

@@ -51,6 +51,13 @@ func GenerateMovieOptions(movies []Movie) []Movie {
 	return movieOptions
 }
 
+func IsFinishedMovieOptions() bool {
+	if len(moviesAlreadyUsed) == 40 {
+		return true
+	}
+	return false
+}
+
 func getNotUsedYetMovie(movies []Movie) Movie {
 	used := false
 	var currentMovie Movie

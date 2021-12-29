@@ -3,13 +3,14 @@ package main
 import (
 	"io/ioutil"
 	"os"
+	"quiz-gui/test/utls"
 	"reflect"
 	"testing"
 )
 import "github.com/google/go-cmp/cmp"
 
 func TestUnmarshalMovies(t *testing.T) {
-	got := UnmarshalMovies(FetchFileContent("./movie-meta/movies.json"))
+	got := UnmarshalMovies(utls.FetchFileContent("./movie-meta/movies.json"))
 	dirInfo, _ := ioutil.ReadDir("./images/movies/")
 	wantSize := len(dirInfo)
 
@@ -22,7 +23,7 @@ func TestUnmarshalMovies(t *testing.T) {
 		if _, err := os.Stat(path); err != nil {
 			t.Errorf("Path to  movie: %s  imageis not correct or cannot be read", movie.Title)
 		}
-		checkImg := FetchFileContent(path)
+		checkImg := utls.FetchFileContent(path)
 
 		if checkImg == nil || len(checkImg) == 0 {
 			t.Errorf("Image for movie: %s is not correct or cannot be read", movie.Title)
@@ -31,7 +32,7 @@ func TestUnmarshalMovies(t *testing.T) {
 }
 
 func TestMovieOptionGeneration(t *testing.T) {
-	movies := UnmarshalMovies(FetchFileContent("../test-resources/movies.json"))
+	movies := UnmarshalMovies(utls.FetchFileContent("../test/resources/movies.json"))
 	gotOptions := GenerateMovieOptions(movies)
 	wantSize := 4
 	if gotOptions == nil || len(gotOptions) != wantSize {

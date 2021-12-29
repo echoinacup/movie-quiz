@@ -28,3 +28,12 @@ func ShuffleQuestions(questions []Question) {
 		questions[i], questions[j] = questions[j], questions[i]
 	})
 }
+
+func IsCorrectAnswer(title string, questions []Question) bool {
+	for _, q := range questions {
+		if title == q.Title {
+			return q.IsCorrect
+		}
+	}
+	return false
+}
