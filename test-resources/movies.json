@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 1,
+    "title": "Shutter Island",
+    "hint": "Which Would Be Worse: To Live As A Monster, Or To Die As A Good Man?",
+    "image_source": "/images/movies/shutter_island.jpeg"
+  },
+  {
+    "_id": 2,
+    "title": "The Revenant",
+    "hint": "What if you use a horse like Airbnb?",
+    "image_source": "/images/movies/revenant.jpeg"
+  },
+  {
+    "_id": 3,
+    "title": "Shawshank redemption",
+    "hint": "Andy Dufresne - Who Crawled Through A River Of Shit \nAnd Came Out Clean On The Other Side.",
+    "image_source": "/images/movies/shawshank.jpeg"
+  },
+  {
+    "_id": 4,
+    "title": "Inception",
+    "hint": "Once An Idea Has Taken Hold Of The Brain, It’s Almost Impossible To Eradicate.",
+    "image_source": "./images/movies/Inception.jpeg"
+  },
+  {
+    "_id": 5,
+    "title": "Memento",
+    "hint": "Lenny, you can't trust a man's life to your little notes and pictures",
+    "image_source": "/images/movies/memento.jpeg"
+  },
+  {
+    "_id": 6,
+    "title": "The Hateful 8",
+    "hint": "That's the problem with old men. You can kick 'em down the stairs, \nand say it's an accident, but you can't just shoot 'em.",
+    "image_source": "/images/movies/hateful8.jpeg"
+  },
+  {
+    "_id": 7,
+    "title": "Oldboy",
+    "hint": "Laugh and the world laughs with you. Weep, and you weep alone",
+    "image_source": "/images/movies/oldboy.jpeg"
+  },
+  {
+    "_id": 8,
+    "title": "Pulp Fiction",
+    "hint": "English mother fucker, do you speak it?",
+    "image_source": "/images/movies/pulp_fiction.jpeg"
+  },
+  {
+    "_id": 9,
+    "title": "Kill Bill",
+    "hint": "Revenge Is A Dish Best Served Cold.",
+    "image_source": "/images/movies/killbill.jpeg"
+  },
+  {
+    "_id": 10,
+    "title": "Matrix",
+    "hint": "One way or another, Neo, this war is going to end.\n Tonight, the future of both worlds will be in your hands… \nor in his.",
+    "image_source": "/images/movies/matrix.jpeg"
+  }
+]

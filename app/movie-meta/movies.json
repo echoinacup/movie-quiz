@@ -1,0 +1,242 @@
+[
+  {
+    "_id": 1,
+    "title": "Shutter Island",
+    "hint": "Which Would Be Worse: To Live As A Monster, Or To Die As A Good Man?",
+    "image_source": "shutter_island.jpeg"
+  },
+  {
+    "_id": 2,
+    "title": "The Revenant",
+    "hint": "What if you use a horse like Airbnb?",
+    "image_source": "revenant.jpeg"
+  },
+  {
+    "_id": 3,
+    "title": "Shawshank redemption",
+    "hint": "Andy Dufresne - Who Crawled Through A River Of Shit And Came Out Clean On The Other Side.",
+    "image_source": "shawshank.jpeg"
+  },
+  {
+    "_id": 4,
+    "title": "Inception",
+    "hint": "Once An Idea Has Taken Hold Of The Brain, It’s Almost Impossible To Eradicate.",
+    "image_source": "Inception.jpeg"
+  },
+  {
+    "_id": 5,
+    "title": "Memento",
+    "hint": "Lenny, you can't trust a man's life to your little notes and pictures",
+    "image_source": "memento.jpeg"
+  },
+  {
+    "_id": 6,
+    "title": "The Hateful 8",
+    "hint": "That's the problem with old men. You can kick 'em down the stairs, \nand say it's an accident, but you can't just shoot 'em.",
+    "image_source": "hateful8.jpeg"
+  },
+  {
+    "_id": 7,
+    "title": "Oldboy",
+    "hint": "Laugh and the world laughs with you. Weep, and you weep alone",
+    "image_source": "oldboy.jpeg"
+  },
+  {
+    "_id": 8,
+    "title": "Pulp Fiction",
+    "hint": "English mother fucker, do you speak it?",
+    "image_source": "pulp_fiction.jpeg"
+  },
+  {
+    "_id": 9,
+    "title": "Kill Bill",
+    "hint": "Revenge Is A Dish Best Served Cold.",
+    "image_source": "killbill.jpeg"
+  },
+  {
+    "_id": 10,
+    "title": "Matrix",
+    "hint": "One way or another, Neo, this war is going to end. Tonight, the future of both worlds will be in your hands… or in his.",
+    "image_source": "matrix.jpeg"
+  },
+  {
+    "_id": 11,
+    "title": "Mad Max: Fury road",
+    "hint": "If I'm gonna die, I'm gonna die historic on the Fury Road!",
+    "image_source": "mad_max.jpeg"
+  },
+  {
+    "_id": 12,
+    "title": "Blade runner 2049",
+    "hint": "To Be Born Is To Have A Soul, I Guess.",
+    "image_source": "blade_runner.jpeg"
+  },
+  {
+    "_id": 13,
+    "title": "Place beyond the pines",
+    "hint": "If you ride like lightning, you're gonna crash like thunder",
+    "image_source": "Place-Beyond.jpeg"
+  },
+  {
+    "_id": 14,
+    "title": "Drive",
+    "hint": "There's a hundred-thousand streets in this city.\n You don't need to know the route. \nYou give me a time and a place, \nI give you a five minute window. \nAnything happens in that five minutes and I'm yours. \nNo matter what. Anything happens a minute either side of that and you're on your own.\n Do you understand?",
+    "image_source": "drive-movie.jpeg"
+  },
+  {
+    "_id": 15,
+    "title": "Only Lovers Left Alive",
+    "hint": "Director is Jarmusch",
+    "image_source": "only_lovers.jpeg"
+  },
+  {
+    "_id": 16,
+    "title": "Venom",
+    "hint": "You Cannot Just Go Around Eating Anybody You Want To.",
+    "image_source": "venom.jpeg"
+  },
+  {
+    "_id": 17,
+    "title": "Snatch",
+    "hint": ":do you like dags?",
+    "image_source": "snatch.jpeg"
+  },
+  {
+    "_id": 18,
+    "title": "Lock, stock and two smoking barrels",
+    "hint": "Guns for show, knives for a pro.",
+    "image_source": "lock-stock.jpeg"
+  },
+  {
+    "_id": 19,
+    "title": "The Departed",
+    "hint": "I got this rat. This gnawing, teething rat.",
+    "image_source": "departed.jpeg"
+  },
+  {
+    "_id": 20,
+    "title": "The Gentlemen",
+    "hint": "There's only one rule in the jungle: when the lion's hungry, he eats!",
+    "image_source": "gentlemen.jpeg"
+  },
+  {
+    "_id": 21,
+    "title": "The killing of a sacred deer",
+    "hint": "You know, not long after my dad died, \nsomeone told me that I eat spaghetti the exact same way he did.",
+    "image_source": "dear.jpeg"
+  },
+  {
+    "_id": 22,
+    "title": "Guns akimbo",
+    "hint": "Nix : Open the fucking door.\nMiles : I'm not exactly great at opening doors right now",
+    "image_source": "gunsakimbo.jpeg"
+  },
+  {
+    "_id": 23,
+    "title": "Insomnia",
+    "hint": "\"a good cop cant sleep 'coz theres a piece of the puzzle is missing \n ..and a bad cop cant sleep 'coz his conscience wont let him..\" You said that once..",
+    "image_source": "insomnia.jpeg"
+  },
+  {
+    "_id": 24,
+    "title": "The godfather",
+    "hint": "I understand. You found paradise in America, had a good trade, made a good living.\n The police protected you; and there were courts of law. \nAnd you didn't need a friend of me. \nBut uh, now you come to me and you say -- \n\"Don Corleone give me justice.\" -- But you don't ask with respect. \nYou don't offer friendship. You don't even think to call me Godfather. \nInstead, you come into my house on the day my daughter is to be married, \nand you uh ask me to do murder, for money",
+    "image_source": "godfather.jpeg"
+  },
+  {
+    "_id": 25,
+    "title": "The blair witch",
+    "hint": "I'm Scared To Close My Eyes, I'm Scared To Open Them!",
+    "image_source": "the-blair-witch.jpeg"
+  },
+  {
+    "_id": 26,
+    "title": "The great gatsby",
+    "hint": "Who is this Gatsby?",
+    "image_source": "gatsby.jpeg"
+  },
+  {
+    "_id": 27,
+    "title": "The lord of the rings",
+    "hint": "My precious!”",
+    "image_source": "lotr.jpeg"
+  },
+  {
+    "_id": 28,
+    "title": "Three billboards outside ebbing missouri",
+    "hint": "Don't Say 'What', Dixon, When She Comes In Calling You A FuckHead.",
+    "image_source": "three-billboards.jpeg"
+  },
+  {
+    "_id": 29,
+    "title": "No country for old men",
+    "hint": "What's the most you ever lost on a coin toss.",
+    "image_source": "nocountry.jpeg"
+  },
+  {
+    "_id": 30,
+    "title": "Hell or High Water",
+    "hint": "Toby Howard: You got a gun on you, old man?\n\nOld Man: You're damn right I got a gun on me. Y'all going to steal my gun too?\n\nToby Howard: We ain't stealing from you. We're stealing from the bank.",
+    "image_source": "hell-or-high-water.jpeg"
+  },
+  {
+    "_id": 31,
+    "title": "Saving Private Ryan",
+    "hint": "Mellish: Fucked up beyond all recognition.\nUpham: FUBAR.",
+    "image_source": "saving-private-ryan.jpeg"
+  },
+  {
+    "_id": 32,
+    "title": "Gangs of New York",
+    "hint": "Ears and noses will be the trophies of the day. But no hand shall touch him.",
+    "image_source": "gangs-of-new-york.jpeg"
+  },
+  {
+    "_id": 33,
+    "title": "There Will Be Blood",
+    "hint": "There's a whole ocean of oil under our feet! No one can get at it except for me!",
+    "image_source": "there-will-be-blood.jpeg"
+  },
+  {
+    "_id": 34,
+    "title": "Blood Diamond",
+    "hint": "That Diamond Is My Ticket Out Of This God-Forsaken Continent.",
+    "image_source": "blood-diamond.jpeg"
+  },
+  {
+    "_id": 35,
+    "title": "Taboo",
+    "hint": " I don't keep anybody around me that doesn't deserve what they get.",
+    "image_source": "taboo.jpeg"
+  },
+  {
+    "_id": 36,
+    "title": "No Time to Die",
+    "hint": "I do not regret a single moment of my life that I spent with you... Except putting you on that train.",
+    "image_source": "no-time-to-die.jpeg"
+  },
+  {
+    "_id": 37,
+    "title": "The Dark Knight",
+    "hint": "Let's put a smile on that face!",
+    "image_source": "dark-knight.jpeg"
+  },
+  {
+    "_id": 38,
+    "title": "Lawless",
+    "hint": "We're survivors, we control the fear. And without the fear, we're all as good as dead!",
+    "image_source": "lawless.jpeg"
+  },
+  {
+    "_id": 39,
+    "title": "Rokenrolla",
+    "hint": "Ask no questions, hear no lies.",
+    "image_source": "rokenrolla.jpeg"
+  },
+  {
+    "_id": 40,
+    "title": "The Guard",
+    "hint": "I'm Irish. Racism is part of my culture.",
+    "image_source": "guard.jpeg"
+  }
+]
