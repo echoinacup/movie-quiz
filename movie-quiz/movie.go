@@ -51,6 +51,7 @@ func GenerateMovieOptions(movies []Movie) []Movie {
 	return movieOptions
 }
 
+//TODO calculate from files
 func IsFinishedMovieOptions() bool {
 	if len(moviesAlreadyUsed) == 40 {
 		return true

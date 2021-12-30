@@ -25,9 +25,32 @@ func InitApp(movies []Movie, mainImgBytes []byte) fyne.Window {
 
 func InitMainWindow() fyne.Window {
 	mainApp := app.New()
+	go ShowResultOfQuizWindow(mainApp)
 	mainWindow := mainApp.NewWindow("Movie quiz for Mini Seal Pup")
 	mainWindow.Resize(fyne.NewSize(700, 700))
 	return mainWindow
+}
+
+var isEndOfTheGame = false
+
+func ShowEndGame() {
+	isEndOfTheGame = true
+}
+
+// TODO maybe add a picture
+func ShowResultOfQuizWindow(a fyne.App) {
+	win := a.NewWindow("End of the Game")
+	for true {
+		if isEndOfTheGame == true {
+			label := canvas.NewText("Well done, Lada :) Quiz is Finished!", color.NRGBA{R: 0x8b, G: 0xc3, B: 0x4a, A: 0xff})
+			label.TextStyle.Bold = true
+			secondWinContainer := container.NewVBox(layout.NewSpacer(), label, layout.NewSpacer())
+			win.SetContent(secondWinContainer)
+			win.Resize(fyne.NewSize(250, 100))
+			win.Show()
+			break
+		}
+	}
 }
 
 func initGuiComponents(movies []Movie, mainImgBytes []byte) *fyne.Container {
@@ -120,10 +143,15 @@ func assignQuestionsToButtons(buttons []*widget.Button, questions []Question) {
 
 func setQuestionButtonTapped(button *widget.Button, currentRoundQuestion []Question) {
 	button.OnTapped = func() {
-		if IsCorrectAnswer(button.Text, currentRoundQuestion) {
+		isAnswerCorrect := IsCorrectAnswer(button.Text, currentRoundQuestion)
+		if isAnswerCorrect && !IsFinishedMovieOptions() {
 			button.Importance = 1
 			nextBtn.Enable()
 			button.Refresh()
+		} else if isAnswerCorrect && IsFinishedMovieOptions() {
+			button.Importance = 1
+			nextBtn.Disabled()
+			ShowEndGame()
 		}
 	}
 }
@@ -147,6 +175,7 @@ func InitRound(
 	movies []Movie,
 	mainScreenInitImg *canvas.Image,
 	questionButtons []*widget.Button) {
+
 	updateButtonLabel(hintBtn, hintBtnLbl)
 	nextBtn.Disable()
 

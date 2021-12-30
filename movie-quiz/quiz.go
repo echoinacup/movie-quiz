@@ -18,7 +18,7 @@ import (
 var resourcesFiles embed.FS
 
 func main() {
-	//Make rand generation les deterministic
+	//Make rand generation less deterministic
 	rand.Seed(time.Now().UnixNano())
 
 	moviesMeta, err := resourcesFiles.ReadFile("movie-meta/movies.json")
@@ -26,12 +26,8 @@ func main() {
 		log.Fatal(err)
 	}
 	movies := UnmarshalMovies(moviesMeta)
-
 	mainScreeHarpBytes, err := resourcesFiles.ReadFile("images/layout/harp.jpeg")
 
-	//Main app initialization
-	// TODO change to resources
 	mainWindow := InitApp(movies, mainScreeHarpBytes)
 	mainWindow.ShowAndRun()
-
 }
